@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCartIcon, PhoneIcon, UserCircleIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ShoppingCartIcon, PhoneIcon, UserCircleIcon, Bars3Icon, XMarkIcon, InformationCircleIcon } from '@heroicons/react/24/outline';
 import WhiteLogo from '../../assets/whiteLogo.png';
 
 const HeaderComponent: React.FC = () => {
@@ -11,19 +11,19 @@ const HeaderComponent: React.FC = () => {
         <img src={WhiteLogo} alt="IsabelAragao" className="w-16" />
       </div>
       <nav className="hidden md:flex items-center space-x-4 text-gray-50 text-sm">
-        <a href="/produtos" className="flex items-center space-x-1">
+        <a href="/" className="flex items-center space-x-1">
           <ShoppingCartIcon className="h-4 w-4" />
           <span>Produtos</span>
         </a>
         <span className="text-gray-300">|</span>
-        <a href="/fale-conosco" className="flex items-center space-x-1">
-          <PhoneIcon className="h-4 w-4" />
+        <a href="https://www.instagram.com/programa_isabeldearagao/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1">
+          <InformationCircleIcon className="h-4 w-4" />
           <span>Fale Conosco</span>
         </a>
         <span className="text-gray-300">|</span>
-        <a href="/central-cliente" className="flex items-center space-x-1">
+        <a href="https://nossolarcampinas.org.br/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1">
           <UserCircleIcon className="h-4 w-4" />
-          <span>Central do Cliente</span>
+          <span>Nosso Lar</span>
         </a>
       </nav>
       <div className="md:hidden">
@@ -33,17 +33,17 @@ const HeaderComponent: React.FC = () => {
       </div>
       {menuOpen && (
         <nav className="absolute top-16 left-0 w-full bg-red-600 text-gray-50 text-sm flex flex-col items-center space-y-4 py-4 md:hidden">
-          <a href="/produtos" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
+          <a href="/" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
             <ShoppingCartIcon className="h-5 w-5" />
             <span>Produtos</span>
           </a>
-          <a href="/fale-conosco" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
+          <a href="https://www.instagram.com/programa_isabeldearagao/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
             <PhoneIcon className="h-5 w-5" />
             <span>Fale Conosco</span>
           </a>
-          <a href="/central-cliente" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
+          <a href="https://nossolarcampinas.org.br/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:bg-red-700 p-2 rounded-md w-full text-center">
             <UserCircleIcon className="h-5 w-5" />
-            <span>Central do Cliente</span>
+            <span>Nosso Lar</span>
           </a>
         </nav>
       )}
