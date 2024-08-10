@@ -31,6 +31,13 @@ const Home: React.FC = () => (
           image={CestaGrande}
           link="/cestabasica3"
         />
+        <CestaBasica
+          name="Cesta Personalizada"
+          description="Você decide o valor da doação"
+          value=""
+          image={CestaGrande}
+          link="/cestabasica4"
+        />
       </div>
     </div>
   </div>

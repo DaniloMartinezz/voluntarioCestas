@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import CestaBasica1 from './Pages/CestaBasica1';
 import CestaBasica2 from './Pages/CestaBasica2';
 import CestaBasica3 from './Pages/CestaBasica3';
+import CestaBasica4 from './Pages/CestaBasica4';
 
 const App: React.FC = () => (
   <Routes>
@@ -12,6 +13,8 @@ const App: React.FC = () => (
     <Route path="/cestabasica1" element={<CestaBasica1 />} />
     <Route path="/cestabasica2" element={<CestaBasica2 />} />
     <Route path="/cestabasica3" element={<CestaBasica3 />} />
+    <Route path="/cestabasica4" element={<CestaBasica4 />} />
+
   </Routes>
 );
 
